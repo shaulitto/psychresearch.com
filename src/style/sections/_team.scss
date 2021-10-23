@@ -1,0 +1,63 @@
+#team {
+  background-color: $primary-color;
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
+  color: $white-color;
+  height: 100%;
+  border-top: 0px;
+  display: flex;
+
+  .team-wrapper {
+    display: flex;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    .team-row {
+      display: flex;
+      padding-bottom: 5rem;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      flex-basis: 50%;
+    }
+
+    &__image {
+      display: flex;
+      height: 100%;
+      align-items: left;
+      justify-content: center;
+      padding-bottom: 6.4rem;
+
+      @include respond(tab-land) {
+        height: 100%;
+      }
+    }
+
+    &__info {
+      display: flex;
+      height: 100%;
+      justify-content: space-around;
+      flex-direction: column;
+
+      @include respond(phone) {
+        align-items: left;
+      }
+
+      &-text {
+        text-align: left;
+        font-size: $default-font-size;
+
+        @include respond(tab-port) {
+          //   font-size: $mid-font-size;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

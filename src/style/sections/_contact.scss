@@ -1,0 +1,86 @@
+#contact {
+  height: 100%;
+  border-top: 0px;
+  display: flex;
+
+  .contact-row {
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+    @include respond(tab-port) {
+      width: 100%;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      padding-right: 5rem;
+
+      @include respond(tab-port) {
+        width: 100%;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-right: 0;
+        padding-bottom: 5rem;
+      }
+
+      &-text {
+        text-align: left;
+        font-size: $mid-font-size;
+
+        @include respond(phone) {
+          font-size: $default-font-size;
+        }
+      }
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      font-size: $mid-font-size;
+
+      .form-item {
+        &__label {
+          width: 100%;
+        }
+
+        .name-input,
+        .email-input,
+        .message-input {
+          border-radius: 2rem;
+          border: none;
+          background: lightgray;
+          display: flex;
+          width: 100%;
+          font-size: $mid-font-size;
+
+          @include respond(phone) {
+            font-size: 2rem;
+          }
+        }
+
+        ::placeholder {
+          opacity: 0.6;
+          padding-left: 1.5rem;
+
+          @include respond(tab-port) {
+            font-weight: bolder;
+          }
+        }
+      }
+
+      .conact-cta {
+        display: flex;
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+/* Call to Action Button */
+.cta-btn {
+  display: inline-block;
+  position: relative;
+  padding: 0.8rem $default-font-size;
+  font-weight: bold;
+  z-index: 1;
+
+  &::after {
+    border-radius: 3rem;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.2s linear;
+  }
+}
+
+/* Hero Style */
+.cta-btn--hero {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  border-radius: 3rem;
+  border: 2px solid;
+  cursor: pointer;
+  // Responsive Button hero style
+  @include respond(phone) {
+    background-image: none;
+    border: 2px solid $white-color;
+    -webkit-text-fill-color: $white-color;
+  }
+
+  &::after {
+    background-image: linear-gradient(
+      135deg,
+      $secondary-color 0%,
+      $primary-color 100%
+    );
+    border-radius: 3rem;
+    // Responsive Button hero style
+    @include respond(phone) {
+      background-image: none;
+    }
+  }
+
+  &:hover {
+    -webkit-text-fill-color: $white-color;
+    text-decoration: none;
+    // Responsive Button hover hero style
+    @include respond(phone) {
+      -webkit-text-fill-color: $white-color;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+/* Contact Style */
+.cta-btn--contact {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: linear-gradient(
+    135deg,
+    $secondary-color 0%,
+    $primary-color 100%
+  );
+  border-radius: 3rem;
+  cursor: pointer;
+  // Responsive Button hero style
+  @include respond(phone) {
+    background-image: none;
+  }
+
+  &::after {
+    background-image: linear-gradient(
+      135deg,
+      $secondary-color 0%,
+      $primary-color 100%
+    );
+    border-radius: 3rem;
+    // Responsive Button hero style
+    @include respond(phone) {
+      background-image: none;
+    }
+  }
+
+  &:hover {
+    -webkit-text-fill-color: $white-color;
+    text-decoration: none;
+    // Responsive Button hover hero style
+    @include respond(phone) {
+      -webkit-text-fill-color: $white-color;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+/* Arrow Button */
+.up i {
+  color: #272727;
+}
