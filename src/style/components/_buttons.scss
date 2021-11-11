@@ -27,6 +27,7 @@
   border-radius: 3rem;
   border: 2px solid;
   cursor: pointer;
+  margin-top: 5rem;
   // Responsive Button hero style
   @include respond(phone) {
     background-image: none;

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Psychedelic Research Consultants`,
-    description: `Psychedelic Research Consultants: Rotem Petranker and Adam Blackman bring you a tailored service for a successful Application for Health Canada.`,
+    description: `Psychedelic Research Consultants: Rotem Petranker and Adam Blackman offer a tailored service, helping your idea meet rigorous science and regulatory approvals.`,
     author: `Shaul Mansour`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },

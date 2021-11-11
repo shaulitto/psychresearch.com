@@ -12,6 +12,7 @@
 
   .team-wrapper {
     display: flex;
+    justify-content: space-around;
 
     @include respond(tab-port) {
       flex-direction: column;
@@ -19,24 +20,21 @@
 
     .team-row {
       display: flex;
+      padding-left: 2rem;
+      padding-right: 2rem;
       padding-bottom: 5rem;
       flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-items: center;
-      flex-basis: 50%;
+      width: 40%;
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
     }
 
     &__image {
-      display: flex;
-      height: 100%;
-      align-items: left;
-      justify-content: center;
       padding-bottom: 6.4rem;
-
-      @include respond(tab-land) {
-        height: 100%;
-      }
     }
 
     &__info {
@@ -47,6 +45,13 @@
 
       @include respond(phone) {
         align-items: left;
+      }
+
+      &-header {
+        text-align: left;
+        padding-bottom: $mid-font-size;
+        font-size: $mid-font-size;
+        font-weight: bold;
       }
 
       &-text {
