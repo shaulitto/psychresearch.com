@@ -30,14 +30,13 @@
     font-weight: 700;
     margin-bottom: 3.2rem;
     text-align: center;
-    // width: 50%;
+    text-transform: uppercase;
 
     @include respond(tab-land) {
       font-size: 4rem;
     }
     @include respond(tab-port) {
       font-size: 3.6rem;
-      // text-align: left;
       width: 100%;
       background-image: none;
     }
