@@ -42,7 +42,7 @@ const ContactForm = () => {
               <Col>
                 <div className="contact-wrapper__info">
                   <p className="contact-wrapper__info-text">You can send us an e-mail to:</p>
-                  <a href="mailto:potemi@gmail.com" className="contact-wrapper__info-text">info@psycheresearch.com</a><br />
+                  <a href="mailto:potemi@gmail.com" className="contact-wrapper__info-text">info@psychresearch.com</a><br />
                   <p className="contact-wrapper__info-text">Or you can fill this form: </p>
                 </div>
               </Col>
