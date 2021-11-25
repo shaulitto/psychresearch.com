@@ -19,7 +19,7 @@ const ThankYouModal = (props) => {
             <h2 className="modal-text bold-text">THANK YOU</h2>
             <br/>
             <p className="modal-text">
-              You are now one step  <br/> closer to a successfull <br/> Health Canada application
+              Your idea is now<br/>one step closer<br/>to coming to life.
             </p>
           </Modal.Body>
           <Modal.Footer>
