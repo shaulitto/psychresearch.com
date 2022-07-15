@@ -31,6 +31,17 @@ const Layout = ({ children }) => {
               <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
             </Link>
           </span>
+          <span>
+            <p>
+              <a href="https://www.psychresearch.com/trial">
+                https://www.psychresearch.com/trial
+              </a>{" "}
+              Redirect to:{" "}
+              <a href="https://redcap.utoronto.ca/surveys/?s=DYENCD7J73PFWHJD">
+                https://redcap.utoronto.ca/surveys/?s=DYENCD7J73PFWHJD
+              </a>
+            </p>
+          </span>
           <p>Email: info@psychresearch.com</p>
           <p>© {new Date().getFullYear()} Psychedelic Research Consultants </p>
           <hr />
