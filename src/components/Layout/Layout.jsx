@@ -37,8 +37,8 @@ const Layout = ({ children }) => {
                 https://www.psychresearch.com/trial
               </a>{" "}
               Redirect to:{" "}
-              <a href="https://redcap.utoronto.ca/surveys/?s=DYENCD7J73PFWHJD">
-                https://redcap.utoronto.ca/surveys/?s=DYENCD7J73PFWHJD
+              <a href="https://redcap.utoronto.ca/surveys/?s=MWL3D74P3HDN94TW">
+                https://redcap.utoronto.ca/surveys/?s=MWL3D74P3HDN94TW
               </a>
             </p>
           </span>
